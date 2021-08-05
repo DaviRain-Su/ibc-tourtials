@@ -1,0 +1,90 @@
+# 区块链间通信协议：概述
+
+- 摘要
+- 介绍
+- 协议范围和属性
+    - 范围
+    - 接口
+    - 运作
+        - 数据中继
+        - 数据的保密性和可读性
+        - 可靠性
+        - 流量控制
+        - 认证
+        - 状态化
+        - 多重复用
+- 主机账本要求
+    - 模块系统
+    - Key/value 存储
+    - 共识状态反省
+    - 时间戳访问
+    - 端口系统
+    - 异常/回滚系统
+    - 数据可用性
+- 协议结构
+    - A: 客户端
+        - 1. 动机
+        - 2. 定义
+        - 3. 期望的属性
+        - 4. 状态验证
+        - 5. 客户端实例
+            - Loopback
+            - Simple signatures
+            - Proxy clieints
+            - BFT consensus and verifiable state
+        - 6. 客户端生命周期
+            - 创建
+            - 更新
+            - Misbehaviour
+    - B: 连接
+        - 1. 动机
+        - 2. 定义
+        - 3. Opening handshake（开放握手）
+        - 4. 版本
+    - C: 通道
+        - 1. 动机
+        - 2. 定义
+        - 3. 属性
+            - a: 效率
+            - b: 完全一次传递
+            - c: 有序
+            - d: 许可
+        - 4. 通道生命周期管理
+            - a: Opening handshake 开放握手
+            - b: 版本管理
+            - c: 关闭握手
+        - 5. 发送数据包
+        - 6. 接受数据包
+        - 7. 超时
+            - a. 发送端
+            - b. 关闭超时
+            - c. 清理状态
+    - D: 中继
+        - 1. 动机
+        - 2. 属性
+        - 3. 基本中继算法
+        - 4. Packets, acknowledgements, timeouts
+            - a: 在一个有序的信道中中继数据包
+            - b: 在一个无序的信道中中继数据包
+            - c: 中继Acknowlegements
+            - d: 中继 timeout
+            - e: 有序限制
+            - f: Bunding
+            - g: Race conditions
+            - h: 激励措施
+- 使用模式
+    - A: Call receiver
+    - B: Call dispatch
+
+- 应用级模块实例
+    - 1. 动机
+    - 2. 属性
+    - 3. 数据包定义
+    - 4. 数据包处理语义
+    - 5. Falut containment 
+    - 6. 多账本转移路径
+
+- 测试和部署
+
+- 致谢
+
